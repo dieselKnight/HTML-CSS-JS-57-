@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    display: block;
+    background: green;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transform: translate(-30px, 20px);
+    border: solid;
+    border-width: 2px;
+    border-color: red;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    background: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transform: translate(75px, -20px);
+    border: solid;
+    border-width: 2px;
+    border-color: green;
+}
